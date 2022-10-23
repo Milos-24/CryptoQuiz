@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.criptoquiz.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0">
+         <image>
+            <Image url="@images.jpg" />
+         </image>
+      </ImageView>
+      <Label id="countryNameLabel" fx:id="countryNameLabel" layoutX="137.0" layoutY="215.0" text="CountryName:" textAlignment="CENTER" textFill="#f5efef">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label id="stateOrProvinceNameLabel" fx:id="stateOrProvinceNameLabel" layoutX="96.0" layoutY="276.0" text="StateOrProvinceName:" textAlignment="CENTER" textFill="#eeeeee">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label id="organizationNameLabel" fx:id="organizationNameLabel" layoutX="112.0" layoutY="337.0" text="OrganizationName:" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label id="organizationalUnitNameLabel" fx:id="organizationalUnitNameLabel" layoutX="89.0" layoutY="400.0" text="OrganizationalUnitName:" textAlignment="CENTER" textFill="#f5f5f5">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="463.0" text="CommonName:" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="536.0" text="E-mailAddress:" textAlignment="CENTER" textFill="#f5f2f2">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="143.0" text="Password:" textAlignment="CENTER" textFill="#f8f8f8">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="75.0" text="Username:" textAlignment="CENTER" textFill="#fff9f9">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField id="usernameTextField" fx:id="usernameTextField" layoutX="375.0" layoutY="75.0" />
+      <TextField id="countryNameTextField" fx:id="countryNameTextField" layoutX="375.0" layoutY="215.0" promptText="BA" />
+      <TextField id="stateOrProvinceNameTextField" fx:id="stateOrProvinceNameTextField" layoutX="375.0" layoutY="276.0" promptText="RS" />
+      <TextField id="organizationNameTextField" fx:id="organizationNameTextField" layoutX="375.0" layoutY="337.0" promptText="Elektrotehnicki Fakultet" />
+      <TextField id="organizationalUnitNameTextField" fx:id="organizationalUnitNameTextField" layoutX="375.0" layoutY="400.0" promptText="ETF" />
+      <TextField id="commonNameTextField" fx:id="commonNameTextField" layoutX="375.0" layoutY="463.0" />
+      <TextField id="emailAddressTextField" fx:id="emailAddressTextField" layoutX="375.0" layoutY="536.0" />
+      <Button layoutX="672.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToMenu" style="-fx-background-color: transparent;" text="Return" textFill="#f8f4f4">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button id="signUpNextButton" layoutX="682.0" layoutY="530.0" mnemonicParsing="false" onAction="#signUpNext" style="-fx-background-color: transparent;" text="Next" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Label id="wrongInputLabel" fx:id="wrongInputLabel" layoutX="20.0" layoutY="20.0" prefHeight="24.0" prefWidth="645.0" textAlignment="JUSTIFY" textFill="#f2f2f2">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordPasswordField" layoutX="375.0" layoutY="143.0" />
+   </children>
+</AnchorPane>

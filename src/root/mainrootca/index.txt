@@ -1,0 +1,2 @@
+V	230317174123Z		03	unknown	/C=BA/ST=RS/O=Elektrotehnicki fakultet/OU=ETF/CN=rootCA1/emailAddress=rootca1@mail.com
+V	230317174137Z		04	unknown	/C=BA/ST=RS/O=Elektrotehnicki fakultet/OU=ETF/CN=rootCA2/emailAddress=rootca2@gmail.com
